@@ -1,9 +1,13 @@
 $(document).on('keydown', function(e) {
-  var note = keyMap[e.keyCode];
+  var qwertyKey = qwertyKeyMap[e.keyCode];
+  var note = keyMap[qwertyKey];
+
   KeyAction.pressKey(note);
 });
 
 $(document).on('keyup', function(e) {
-  var note = keyMap[e.keyCode];
+  var qwertyKey = qwertyKeyMap[e.keyCode];
+  var note = keyMap[qwertyKey];
+  
   KeyAction.releaseKey(note);
 });

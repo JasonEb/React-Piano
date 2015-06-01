@@ -20,8 +20,9 @@ var Key = React.createClass({
   },
   render: function(){
     return(
-      <div className="key" style={{'background-color': this.state.color}}>
-        {this.props.noteName}
+      <div className="key" style={{'backgroundColor': this.state.color}}>
+        <div className="note">{this.props.noteName}</div>
+        <div className="qwertyKey"><p>{this.props.qwertyKey}</p></div>
       </div>
     )
   }

@@ -1,13 +1,24 @@
-var keyMap = {
-  //in order, codes are A S D F
-  '65' : 'C4',
-  '83' : 'D4',
-  '68' : 'E4',
-  '70' : 'F4',
-  '71' : 'G4',
 
-  //black Keys
-  //represent W E
-  '87' : 'C#4',
-  '69' : 'Eb4'
+var qwertyKeyMap = {
+  '65' : 'A',
+  '83' : 'S',
+  '68' : 'D',
+  '70' : 'F',
+  '71' : 'G',
+  '72' : 'H',
+  '74' : 'J',
+  '75' : 'K',
+  '76' : 'L'
+}
+var keyMap = {
+  //white Keys
+  'A' : 'C4',
+  'S' : 'D4',
+  'D' : 'E4',
+  'F' : 'F4',
+  'G' : 'G4',
+  'H' : 'A4',
+  'J' : 'B4',
+  'K' : 'C5',
+  'L' : 'D5'
 }
