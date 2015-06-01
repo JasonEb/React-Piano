@@ -1,5 +1,6 @@
 
 var qwertyKeyMap = {
+  //white keys
   '65' : 'A',
   '83' : 'S',
   '68' : 'D',
@@ -8,7 +9,14 @@ var qwertyKeyMap = {
   '72' : 'H',
   '74' : 'J',
   '75' : 'K',
-  '76' : 'L'
+  '76' : 'L',
+
+  //black keys
+  '87' : 'W',
+  '69' : 'E',
+  '84' : 'T',
+  '89' : 'Y',
+  '79' : 'O'
 }
 var keyMap = {
   //white Keys
@@ -20,5 +28,12 @@ var keyMap = {
   'H' : 'A4',
   'J' : 'B4',
   'K' : 'C5',
-  'L' : 'D5'
+  'L' : 'D5',
+
+  //black Keys
+  'W' : 'C#4',
+  'E' : 'Eb4',
+  'T' : 'G#4',
+  'Y' : 'Bb4',
+  'O' : 'C#5'
 }
