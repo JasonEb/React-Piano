@@ -12,4 +12,4 @@ KeyAction = {
       key: keyData
     });
   }
-}
+};
