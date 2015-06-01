@@ -7,6 +7,9 @@ KeyAction = {
   },
 
   releaseKey: function(keyData){
-
+    AppDispatcher.dispatch({
+      actionType: KeyConstants.KEY_RELEASED,
+      key: keyData
+    });
   }
 }
