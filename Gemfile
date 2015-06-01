@@ -43,3 +43,5 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'react-rails', '~>1.0'
+gem 'flux-rails-assets'
