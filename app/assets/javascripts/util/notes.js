@@ -1,8 +1,8 @@
-function () {
+!function(){
 
   var ctx = new (window.AudioContext || window.webkitAudioContext)();
 
-  var createOscillator = function(freq){
+   var createOscillator = function(freq){
      var osc = ctx.createOscillator();
      osc.type = "sine";
      osc.frequency.value = freq;
@@ -24,13 +24,17 @@ function () {
     this.freq = freq;
 
     this.oscillatorNode = createOscillator(freq);
-    this.gainNode = gainNode();
+    this.gainNode = createGainNode();
     this.oscillatorNode.connect(this.gainNode);
   };
 
   Note.prototype.start = function (){
-    
+    this.gainNode.gain.value = 0.3;
+  };
+
+  Note.prototype.stop = function (){
+    this.gainNode.gain.value = 0.0;
   };
 
 
-}();
+}()
