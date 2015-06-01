@@ -1,14 +1,15 @@
 (function(root) {
-  var _notes = [];
+  var _keys = [];
 
   root.KeyStore = $.extend({}, EventEmitter.prototype, {
     all: function () {
-      return _notes.slice();
+      return _keys.slice();
     },
 
     dispatcherID: AppDispatcher.register(function(payload) {
       switch(payload.actionType) {
-        case KEY_PRESSED:
+        case KeyConstants.KEY_PRESSED:
+          _keys.push(payload.key);
           break;
       }
     })
