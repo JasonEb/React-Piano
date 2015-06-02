@@ -45,5 +45,8 @@ var keyMap = {
 
   //black keys group 3
   'O' : 'C#5',
-  'P' : 'Eb5'
+  'P' : 'Eb5',
+
+  //chord keys
+  'Z' : 'CMaj'
 }
