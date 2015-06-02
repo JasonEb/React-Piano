@@ -4,8 +4,23 @@ var Keyboard = React.createClass({
       <div className="keyboard">
 
         <div className='black-keys'>
-          <Key noteName='C#4' qwertyKey='W'/>
-          <Key noteName='Eb4' qwertyKey='E'/>
+          <span className='group-one'>
+            <Key noteName='C#4' qwertyKey='W'/>
+            <Key noteName='Eb4' qwertyKey='E'/>
+          </span>
+
+          <span className='group-two'>
+            <Key noteName='F#4' qwertyKey='T'/>
+            <Key noteName='G#4' qwertyKey='Y'/>
+            <Key noteName='Bb4' qwertyKey='U'/>
+          </span>
+
+          <span className='group-three'>
+            <Key noteName='C#5' qwertyKey='O'/>
+            <Key noteName='Eb5' qwertyKey='P'/>
+          </span>
+
+
         </div>
 
         <div className="white-keys">
@@ -18,6 +33,7 @@ var Keyboard = React.createClass({
           <Key noteName='B4' qwertyKey='J'/>
           <Key noteName='C5' qwertyKey='K'/>
           <Key noteName='D5' qwertyKey='L'/>
+          <Key noteName='E5' qwertyKey=';'/>
         </div>
 
       </div>
