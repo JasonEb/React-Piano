@@ -13,3 +13,72 @@
  *= require_tree .
  *= require_self
  */
+ .keyboard {
+   margin-left: auto;
+   margin-right: auto;
+   width: 47em;
+   background-color: rgba(147, 147, 147, 1);
+   border-radius: 10px;
+   padding: 10px 10px 10px 10px;
+   -webkit-box-shadow: 13px 11px 41px 8px rgba(0,0,0,0.75);
+   -moz-box-shadow: 13px 11px 41px 8px rgba(0,0,0,0.75);
+   box-shadow: 13px 11px 41px 8px rgba(0,0,0,0.75);
+ }
+
+ .key {
+  height: 8em;
+  width: 4em;
+  background-color: #D3D3D3;
+  display: inline-block;
+  border-radius: 15px;
+  text-align:center;
+  box-shadow: 2px 2px 5px #000000;
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.key < p {
+  color: #FAEBD7;
+}
+
+.note {
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ color: rgb(124, 124, 124);
+}
+
+.qwertyKey {
+ background-color: black;
+ display: table;
+ color: #FAEBD7;
+ width: 45px;
+ height: 45px;
+ margin-left: auto;
+ margin-right: auto;
+ border-radius: 4px;
+ box-shadow: 1px 1px 2px #000000;
+ top: 50%;
+ left: 50%;
+ position: absolute;
+ transform: translate(-50%, -50%);
+}
+
+.qwertyKey > p {
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+}
+
+.black-keys .key {
+  position: relative;
+  left: 4.5%
+}
+
+.black-keys .group-two .key{
+  left: 13.25%
+}
+
+.black-keys .group-three .key{
+  left: 22.25%
+}

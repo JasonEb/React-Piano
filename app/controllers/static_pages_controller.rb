@@ -1,5 +1,9 @@
 class StaticPagesController < ApplicationController
-  def root
-    render :root
+  def piano
+    render :piano
+  end
+
+  def janko
+    render :janko
   end
 end
