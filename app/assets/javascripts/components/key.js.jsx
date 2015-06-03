@@ -1,9 +1,9 @@
 var Key = React.createClass({
   getInitialState:function () {
-    return { notes: KeyStore.all(), color: '#D3D3D3', scale: 'scale(1)' }
+    return { color: '#D3D3D3', scale: 'scale(1)' }
   },
   _onChange: function () {
-    var notes = this.state.notes;
+    var notes = KeyStore.all();
     var key = this.props.noteName;
     if (notes[key]) {
       this.note.start();
