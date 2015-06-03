@@ -1,4 +1,4 @@
-var Keyboard = React.createClass({r
+var Keyboard = React.createClass({
   render: function() {
     return (
       <div className="keyboard">
