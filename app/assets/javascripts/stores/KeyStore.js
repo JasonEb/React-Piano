@@ -10,7 +10,7 @@
     addChangeListener: function(callback){
       this.on(CHANGE_EVENT, callback);
     },
-    removeChangeListenger: function(callback){
+    removeChangeListener: function(callback){
       this.removeListener(CHANGE_EVENT, callback);
     },
     dispatcherID: AppDispatcher.register(function(payload) {

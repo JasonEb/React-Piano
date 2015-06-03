@@ -63,6 +63,10 @@ var Keyboard = React.createClass({
           </span>
         </div>
 
+        <div className="recording">
+          <Recorder />
+        </div>
+
 
 
       </div>
