@@ -16,7 +16,7 @@
     dispatcherID: AppDispatcher.register(function(payload) {
       switch(payload.actionType) {
         case KeyConstants.KEY_PRESSED:
-          _keys[payload.key] = true;
+          _keys[payload.key] = payload.key;
           KeyStore.emit(CHANGE_EVENT);
           break;
         case KeyConstants.KEY_RELEASED:
