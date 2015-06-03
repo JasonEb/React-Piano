@@ -26,4 +26,6 @@
       }
     })
   });
+
+  KeyStore.setMaxListeners(50);
 })(this);
