@@ -7,7 +7,7 @@ var Key = React.createClass({
     var key = this.props.noteName;
     if (notes[key]) {
       this.note.start();
-      this.setState({'color' : 'white', scale: 'scale(1.11)'});
+      this.setState({'color' : 'white', scale: 'scale(1.08)'});
     } else {
       this.note.stop();
       this.setState({'color' : '#D3D3D3', scale: 'scale(1)'});
