@@ -11,5 +11,12 @@ KeyAction = {
       actionType: KeyConstants.KEY_RELEASED,
       key: keyData
     });
+  },
+
+  setKeys: function(keys){
+    AppDispatcher.dispatch({
+      actionType: KeyConstants.SET_KEYS,
+      keys: keys
+    });
   }
 };
