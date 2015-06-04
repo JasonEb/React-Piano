@@ -54,10 +54,10 @@ var Recorder = React.createClass({
   render: function () {
     return (
       <span>
-        <button onClick={this.startRecording}>Record </button>
-        <button onClick={this.stopRecording}>Stop</button>
-        <button onClick={this.resetRecording}>Reset</button>
-        <button onClick={this.playRecording}>Play</button>
+        <button onClick={this.startRecording}><p>record </p></button>
+        <button onClick={this.stopRecording}><p>stop</p></button>
+        <button onClick={this.resetRecording}><p>reset</p></button>
+        <button onClick={this.playRecording}><p>play</p></button>
       </span>
     )
   }

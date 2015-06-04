@@ -25,10 +25,36 @@
    box-shadow: 13px 11px 41px 8px rgba(0,0,0,0.75);
  }
 
+div.recording {
+  position: relative;
+  left: 0.4em;
+}
+
+button {
+  height: 4em;
+  width: 4em;
+  background-color: black;
+  padding-right: 1em;
+  color: #FAEBD7;
+  margin-left: auto;
+  margin-right: 0.5em;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #000000;
+}
+
+button:first-child {
+  width: 5em;
+}
+
+button > p {
+  position: relative;
+  top: 1em;
+  right: 0.35em;
+}
+
  .key {
   height: 6em;
   width: 4em;
-  background-color: #D3D3D3;
   display: inline-block;
   border-radius: 15px;
   text-align:center;
@@ -37,8 +63,7 @@
   position: relative;
   margin-bottom: 7px;
 }
-
-.key < p {
+.key > p {
   color: #FAEBD7;
 }
 
