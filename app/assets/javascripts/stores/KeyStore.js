@@ -4,7 +4,7 @@
 
   _resetKeys = function(keys){
 
-    _keys = $.extend({}, keys);
+    _keys = JSON.parse(JSON.stringify(keys));
   };
 
   root.KeyStore = $.extend({}, EventEmitter.prototype, {
