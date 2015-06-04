@@ -40,6 +40,7 @@ button {
   margin-right: 0.5em;
   border-radius: 4px;
   box-shadow: 1px 1px 2px #000000;
+  font-family: "VAGRoundedLight";
 }
 
 button:first-child {
@@ -68,7 +69,7 @@ button > p {
 }
 
 .note {
- font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-family: "VAGRoundedLight";
  color: rgb(124, 124, 124);
 }
 
@@ -89,7 +90,7 @@ button > p {
 }
 
 .qwertyKey > p {
- font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-family: "VAGRoundedLight";
  display: table-cell;
  text-align: center;
  vertical-align: middle;
@@ -119,5 +120,9 @@ button > p {
 
 .brand > img {
   width: 225px;
+}
 
+@font-face {
+  font-family: 'VAGRoundedLight';
+  src:url('VAG Rounded Light.ttf');
 }
