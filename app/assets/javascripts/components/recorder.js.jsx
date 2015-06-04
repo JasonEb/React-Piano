@@ -2,13 +2,13 @@ var Recorder = React.createClass({
   _onChange: function () {
     var notes = KeyStore.all();
     this.recording.addNotes(notes);
-
   },
   _playEntry: function(notes) {
     KeyAction.setKeys(notes);
   },
   startRecording: function () {
     this.recording.record();
+    this.resetRecording();
     KeyStore.addChangeListener(this._onChange);
   },
 
@@ -56,7 +56,6 @@ var Recorder = React.createClass({
       <span>
         <button onClick={this.startRecording}><p>record </p></button>
         <button onClick={this.stopRecording}><p>stop</p></button>
-        <button onClick={this.resetRecording}><p>reset</p></button>
         <button onClick={this.playRecording}><p>play</p></button>
       </span>
     )
