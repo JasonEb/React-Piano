@@ -16,7 +16,7 @@
  .keyboard {
    margin-left: auto;
    margin-right: auto;
-   width: 47em;
+   width: 50em;
    background-color: rgba(147, 147, 147, 1);
    border-radius: 10px;
    padding: 10px 10px 10px 10px;
@@ -25,25 +25,51 @@
    box-shadow: 13px 11px 41px 8px rgba(0,0,0,0.75);
  }
 
- .key {
-  height: 8em;
+div.recording {
+  position: relative;
+  left: 0.75em;
+}
+
+button {
+  height: 4em;
   width: 4em;
-  background-color: #D3D3D3;
+  background-color: black;
+  padding-right: 1em;
+  color: #FAEBD7;
+  margin-left: auto;
+  margin-right: 0.5em;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #000000;
+  font-family: "VAGRoundedLight";
+}
+
+button:first-child {
+  width: 5em;
+}
+
+button > p {
+  position: relative;
+  top: 1em;
+  right: 0.35em;
+}
+
+ .key {
+  height: 6em;
+  width: 4em;
   display: inline-block;
   border-radius: 15px;
   text-align:center;
   box-shadow: 2px 2px 5px #000000;
   margin-left: 10px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
-
-.key < p {
+.key > p {
   color: #FAEBD7;
 }
 
 .note {
- font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-family: "VAGRoundedLight";
  color: rgb(124, 124, 124);
 }
 
@@ -57,28 +83,46 @@
  margin-right: auto;
  border-radius: 4px;
  box-shadow: 1px 1px 2px #000000;
- top: 50%;
+ top: 60%;
  left: 50%;
  position: absolute;
  transform: translate(-50%, -50%);
 }
 
 .qwertyKey > p {
- font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-family: "VAGRoundedLight";
  display: table-cell;
  text-align: center;
  vertical-align: middle;
 }
 
-.black-keys .key {
+.bottom-row {
   position: relative;
-  left: 4.5%
+  left: 1.5em
 }
 
-.black-keys .group-two .key{
-  left: 13.25%
+.top-row {
+  position: relative;
+  left: 0.5em
 }
 
-.black-keys .group-three .key{
-  left: 22.25%
+.home-row{
+  position: relative;
+  left: 1em;
+}
+
+.brand {
+  position: relative;
+  width: 14em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand > img {
+  width: 225px;
+}
+
+@font-face {
+  font-family: 'VAGRoundedLight';
+  src:url('VAG Rounded Light.ttf');
 }
