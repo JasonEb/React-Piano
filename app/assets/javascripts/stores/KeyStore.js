@@ -21,7 +21,6 @@
       switch(payload.actionType) {
         case KeyConstants.KEY_PRESSED:
           if (!_keys[payload.key]) {
-            console.log(payload.key);
             _keys[payload.key] = payload.key;
             KeyStore.emit(CHANGE_EVENT);
           }
