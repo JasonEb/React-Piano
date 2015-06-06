@@ -1,17 +1,21 @@
 var Reader = React.createClass({
+  getInitialState: function () {
+    return { text: ''};
+  },
   _onChange: function () {
     var notes = KeyStore.all();
     this.recording.addNotes(notes);
   },
+
   _playEntry: function(notes) {
     KeyAction.setKeys(notes);
   },
+
   startRecording: function () {
     this.recording.record();
     this.resetRecording();
     KeyStore.addChangeListener(this._onChange);
   },
-
   stopRecording: function () {
     KeyStore.removeChangeListener(this._onChange);
     this.recording.stop();
@@ -48,14 +52,27 @@ var Reader = React.createClass({
     }.bind(this), 1);
   },
 
+  parse: function(event) {
+    event.preventDefault();
+    console.log(this.refs.message.getDOMNode().value);
+  },
+
+  handleChange: function(event) {
+    this.setState({text: event.currentTarget.value});
+  },
+
   componentDidMount: function (){
-    this.recording = new Track("text");
+    this.recording = new Track("parse");
   },
   render: function () {
+    var text = this.state.value;
+
     return (
       <span>
-        <input>Input message</input>
-        <input type="submit"></input>
+        <form onSubmit={this.parse}>
+          <input type="text" value={text} ref="message">Input message</input>
+          <input type="submit"></input>
+        </form>
       </span>
     )
   }
