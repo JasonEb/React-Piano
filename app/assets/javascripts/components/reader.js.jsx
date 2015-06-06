@@ -32,7 +32,7 @@ var Reader = React.createClass({
     var elapsedTime = 0;
     var slices = this.recording.roll.slice();
     var nextSlice = slices.shift();
-
+    debugger
     console.log("begin recording");
 
     this.timerID = setInterval( function(){
@@ -54,11 +54,9 @@ var Reader = React.createClass({
 
   parse: function(event) {
     event.preventDefault();
-    console.log(this.refs.message.getDOMNode().value);
-  },
-
-  handleChange: function(event) {
-    this.setState({text: event.currentTarget.value});
+    var string = this.refs.message.getDOMNode().value;
+    this.recording.recordMessage(string);
+    this.playRecording();
   },
 
   componentDidMount: function (){
