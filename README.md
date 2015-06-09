@@ -1,5 +1,5 @@
 ## Janki
-<a href="jankiboard.herokuapp.com">Live Demo</a>
+<a href="http://jankiboard.herokuapp.com">Live Demo</a>
 
 Janki is an Janko inspired musical app built with Rails, React, and the Flux architecture. Check it out live he
 
