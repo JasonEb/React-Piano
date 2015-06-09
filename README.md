@@ -4,7 +4,7 @@
 Janki is an Janko inspired musical app built with Rails, React, and the Flux architecture. Check it out live he
 
 ![Janko layout](http://www.pianoworld.com/images/Janko_layout.jpg)
-<img src="http://imgur.com/gIoyeoj" width="300px"
+<img src="http://imgur.com/gIoyeoj" width="300px">
 
 Even though it's sits on a Rails MVC framework, the mechanics are constructured to follow the Flux flow.
 
@@ -24,4 +24,4 @@ Playback is achieved by recording the notes pressed when the ```View``` triggers
 ###### CSS and Style
 Apple's keyboard layout is the main inspiration for the design. I want users to feel at home with the app, so I used the same font (VAG Rounded) and color scheme. When keys are pressed, the keys are visibly compressed by changing it's scale and color.
 
-Because of JSX, conceptualizing and coding the logic behind each component was easy and satisfying, since I was working more with a JavaScript/HTML language. 
+Because of JSX, conceptualizing and coding the logic behind each component was easy and satisfying, since I was working more with a JavaScript/HTML language.
