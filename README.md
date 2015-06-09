@@ -4,7 +4,7 @@
 Janki is an Janko inspired musical app built with Rails, React, and the Flux architecture. Check it out live he
 
 ![Janko layout](http://www.pianoworld.com/images/Janko_layout.jpg)
-<img src="http://imgur.com/gIoyeoj" width="300px">
+<img src="http://i.imgur.com/gIoyeoj.png" width="320px">
 
 Even though it's sits on a Rails MVC framework, the mechanics are constructured to follow the Flux flow.
 
