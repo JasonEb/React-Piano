@@ -5,6 +5,18 @@ var JukeBox = React.createClass({
     }
   },
 
+  _onChange: function () {
+    console.log("_onChange hit");
+    this.setState({
+      tracks: TrackStore.all()
+    });
+    console.log(this.state.tracks);
+  },
+
+  componentDidMount: function () {
+    TrackStore.addChangeListener(this._onChange);
+  },
+
   render: function() {
     return (
       <div>
@@ -12,7 +24,7 @@ var JukeBox = React.createClass({
         <ul>
           {this.state.tracks.map(function(track, idx){
             return (
-              <li>Track {idx}</li>
+              <li>Track {idx + 1}</li>
             )
           })}
         </ul>

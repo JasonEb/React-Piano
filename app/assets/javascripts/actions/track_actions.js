@@ -9,7 +9,7 @@ TrackAction = {
 
   receiveTrack: function(trackData){
     AppDispatcher.dispatch({
-      actionType: TrackConstants.RECEIVE_TRACK,
+      actionType: TrackConstants.CLIENT_SAVE_TRACK,
       track: trackData
     });
   }

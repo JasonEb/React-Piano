@@ -49,6 +49,9 @@ var Recorder = React.createClass({
   },
 
   saveRecording: function () {
+    if (this.recording.roll.length === 0){
+      return;
+    }
     var track = this.recording.roll;
     TrackAction.receiveTrack(track);
   },
