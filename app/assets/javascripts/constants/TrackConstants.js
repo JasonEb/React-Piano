@@ -1,3 +1,4 @@
 window.TrackConstants = {
   TRACKS_RECEIVED: "TRACKS_RECEIVED",
+  RECEIVE_TRACK: "RECEIVE_TRACK"
 }
