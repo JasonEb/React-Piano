@@ -1,7 +1,7 @@
 var TrackPlayer = React.createClass({
   render: function () {
     return (
-      <div>What</div>
+      <div>CurrentTrack: {this.props.currentTrack}</div>
     )
   }
 });

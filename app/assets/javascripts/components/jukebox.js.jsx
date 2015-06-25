@@ -1,18 +1,23 @@
 var JukeBox = React.createClass({
   getInitialState: function(){
     return {
-      tracks: TrackStore.all()
+      tracks: TrackStore.all(),
+      currentTrack: 10
     }
   },
 
   _onChange: function () {
     this.setState({
-      tracks: TrackStore.all()
+      tracks: TrackStore.all(),
     });
   },
 
   componentDidMount: function () {
     TrackStore.addChangeListener(this._onChange);
+  },
+
+  handleClick: function(){
+    debugger;
   },
 
   render: function() {
@@ -28,7 +33,7 @@ var JukeBox = React.createClass({
         </ul>
 
         <div className="trackplayer">
-          <TrackPlayer />
+          <TrackPlayer currentTrack={this.state.currentTrack} />
         </div>
 
       </div>
