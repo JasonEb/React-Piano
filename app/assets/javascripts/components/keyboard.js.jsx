@@ -67,9 +67,7 @@ var Keyboard = React.createClass({
           <Recorder />
         </div>
 
-        <div className="reader">
-          <Reader />
-        </div>
+
 
 
 
