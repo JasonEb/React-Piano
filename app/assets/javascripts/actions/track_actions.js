@@ -9,7 +9,7 @@ TrackAction = {
 
   receiveTrack: function(trackData){
     AppDispatcher.dispatch({
-      actionType: TrackConstants.RECEIVE_TRACK;
+      actionType: TrackConstants.RECEIVE_TRACK,
       track: trackData
     });
   }

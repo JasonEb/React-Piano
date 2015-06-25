@@ -8,7 +8,9 @@
 
     dispatcherID: AppDispatcher.register(function(payload) {
       switch(payload.actionType) {
-
+        case TrackConstants.RECEIVE_TRACK:
+          _tracks.push(payload.track);
+          break;
       }
     })
   });

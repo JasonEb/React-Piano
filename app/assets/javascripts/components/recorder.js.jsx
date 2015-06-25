@@ -48,6 +48,10 @@ var Recorder = React.createClass({
     }.bind(this), 1);
   },
 
+  saveRecording: function () {
+    var track = this.recording.roll;
+    TrackAction.receiveTrack(track);
+  },
   componentDidMount: function (){
     this.recording = new Track("test");
   },
@@ -57,6 +61,7 @@ var Recorder = React.createClass({
         <button onClick={this.startRecording}><p>record </p></button>
         <button onClick={this.stopRecording}><p>stop</p></button>
         <button onClick={this.playRecording}><p>play</p></button>
+        <button onClick={this.saveRecording}><p>save</p></button>
       </span>
     )
   }
