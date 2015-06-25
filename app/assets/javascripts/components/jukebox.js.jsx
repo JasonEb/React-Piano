@@ -6,11 +6,9 @@ var JukeBox = React.createClass({
   },
 
   _onChange: function () {
-    console.log("_onChange hit");
     this.setState({
       tracks: TrackStore.all()
     });
-    console.log(this.state.tracks);
   },
 
   componentDidMount: function () {
@@ -28,6 +26,11 @@ var JukeBox = React.createClass({
             )
           })}
         </ul>
+
+        <div className="trackplayer">
+          <TrackPlayer />
+        </div>
+
       </div>
     )
   }
