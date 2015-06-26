@@ -1,10 +1,14 @@
 var TrackPlayer = React.createClass({
   getInitialState: function(){
-    return { currentTrack: ""}
+    return { currentTrack: "null"}
   },
   render: function () {
     return (
-      <div>CurrentTrack: {this.props.currentTrack + 1}</div>
+      <div className="trackplayer">
+        CurrentTrack: {this.props.currentTrack + 1}
+        <button onClick={this.handleClickPlay}>Play</button>
+        <button onClick={this.handleClickDelete}>Delete</button>
+      </div>
     )
   }
 });

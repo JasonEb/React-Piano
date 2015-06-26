@@ -2,7 +2,7 @@ var JukeBox = React.createClass({
   getInitialState: function(){
     return {
       tracks: TrackStore.all(),
-      currentTrack: 10
+      currentTrack: -1
     }
   },
 
