@@ -33,12 +33,10 @@ var Recorder = React.createClass({
 
     this.timerID = setInterval( function(){
       if (slices.length === 0) {
-        console.log("finish recording");
         clearInterval(this.timerID);
       } else {
         elapsedTime = Date.now() - beginningTime;
         if (nextSlice.time <= elapsedTime){
-          console.log(nextSlice.notes);
           this._playEntry(nextSlice.notes);
           nextSlice = slices.shift();
         }

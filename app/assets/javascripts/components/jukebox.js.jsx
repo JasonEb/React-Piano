@@ -16,8 +16,9 @@ var JukeBox = React.createClass({
     TrackStore.addChangeListener(this._onChange);
   },
 
-  handleClick: function(){
-    debugger;
+  handleClick: function(event){
+    debugger
+    // this.setState({ )
   },
 
   render: function() {
@@ -27,9 +28,9 @@ var JukeBox = React.createClass({
         <ul>
           {this.state.tracks.map(function(track, idx){
             return (
-              <li>Track {idx + 1}</li>
+              <li key={idx} onClick={this.handleClick}>Track {idx + 1}</li>
             )
-          })}
+          }.bind(this))}
         </ul>
 
         <div className="trackplayer">
