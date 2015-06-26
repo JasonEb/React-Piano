@@ -17,8 +17,8 @@ var JukeBox = React.createClass({
   },
 
   handleClick: function(event){
-    debugger
-    // this.setState({ )
+    var currentTrackIdx = parseInt(event.currentTarget.children[1].innerHTML) - 1;
+    this.setState({currentTrack: currentTrackIdx});
   },
 
   render: function() {
